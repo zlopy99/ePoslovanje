@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".fragments.StudentFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idEdt"
+        android:layout_width="230dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Ime i prezime" />
+    <Button
+        android:id="@+id/idBtnGenerateQR"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/idEdt"
+        android:layout_marginTop="50dp"
+        android:text="QR kod"
+        android:background="@drawable/round_button"/>
+
+    <ImageView
+        android:id="@+id/idIVQrcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="center"
+        android:layout_below="@id/idBtnGenerateQR"
+        android:contentDescription="string/qr_code" />
+
+
+</RelativeLayout>

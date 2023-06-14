@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfesorFragment">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Lista studenata:\n"
+        android:textSize="20dp"
+        android:textColor="#6F000000"
+        android:id="@+id/list"
+        android:layout_below="@+id/scanner_view"
+        />
+
+
+
+<com.budiyev.android.codescanner.CodeScannerView
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:id="@+id/scanner_view"
+    app:flashButtonColor="@color/white"
+    app:autoFocusButtonVisible="true"
+    app:maskColor="#6F000000"
+    app:autoFocusButtonColor="@color/white"
+    />
+
+
+</RelativeLayout>
