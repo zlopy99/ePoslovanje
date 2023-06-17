@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/black"
     tools:context=".fragments.StudentFragment">
 
     <com.google.android.material.textfield.TextInputEditText
@@ -11,7 +12,10 @@
         android:layout_height="56dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:hint="Ime i prezime" />
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:hint="Ime i prezime"/>
     <Button
         android:id="@+id/idBtnGenerateQR"
         android:layout_width="100dp"

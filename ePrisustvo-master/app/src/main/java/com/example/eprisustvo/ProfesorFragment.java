@@ -40,7 +40,6 @@ public class ProfesorFragment extends Fragment {
         final Activity activity = getActivity();
         View view = inflater.inflate(R.layout.fragment_profesor, container, false);
 
-        ToneGenerator toneGen1 = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
         codeData = view.findViewById(R.id.list);
 
         CodeScannerView scannerView =view.findViewById(R.id.scanner_view);
@@ -62,7 +61,6 @@ public class ProfesorFragment extends Fragment {
 
                         sortiraj();
 
-                        toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
                         mCodeScanner.startPreview();
 
 
